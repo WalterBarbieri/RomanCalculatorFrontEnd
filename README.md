@@ -1,13 +1,13 @@
-#Front-end (React) for Roman Calculator
+# Front-end (React) for Roman Calculator
 
-##Prerequisites
+## Prerequisites
 - Node.js >= 18
 - npm
 - Vite/React environment 
 
-##Running the App
+## Running the App
 - npm install
 - npm run dev
 
-##Style
+## Style
 - tailwind CSS v.3
