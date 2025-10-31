@@ -17,7 +17,7 @@
 - roman_calculator_service.ts
   - simpleConvert(value: number) => Promise<SimpleConvert>
   - return SimpleConvert interface:
-  ```json
+  ```ts
   export interface SimpleConvert {
   roman: string
   value: number
@@ -25,7 +25,7 @@
 ```
 - simpleConvert(value: number) => Promise<SimpleConvert>
   - return SimpleConvert interface:
-  ```json
+  ```ts
   export interface SimpleConvert {
   roman: string
   value: number
