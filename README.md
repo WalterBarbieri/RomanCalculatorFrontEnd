@@ -1,4 +1,4 @@
-# Front-end (React) for Roman Calculator
+# Front-end React for Roman Calculator
 
 ## Prerequisites
 - Node.js >= 18
