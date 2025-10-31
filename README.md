@@ -52,10 +52,10 @@ npm run dev
 ### Hooks
 #### use_roman_calculator.tsx
 Encapsulates API logic and manages:
-   -Response state
-   -Error state
-   - Loading state
-      - Usage example:
+-Response state
+-Error state
+- Loading state
+   - Usage example:
 ```ts
     const { loading, error, simpleResult, handleSimpleConvert, clearError } =
     useRomanCalculator();
@@ -67,6 +67,5 @@ Encapsulates API logic and manages:
    - Uses useRomanCalculator hook
 #### compute_form.tsx
    - Input form to compute (add and subtract) 2 numbers
-   - Show Result
-   - Show Error
+   - Displays result and errors
    - Uses useRomanCalculator hook
