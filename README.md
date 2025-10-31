@@ -6,10 +6,12 @@
 - Vite/React environment 
 
 ## Running the App
-- npm install
-- npm run dev
+```bash
+npm install
+npm run dev
+```
 
-## Style
+## Styling
 - tailwind CSS v.3
 
 ## Structure
@@ -19,7 +21,7 @@
 ```ts
    simpleConvert(value: number) => Promise<SimpleConvert>
 ```
-- return SimpleConvert interface:
+- Response Type:
 ```ts
   export interface SimpleConvert {
   roman: string
@@ -30,7 +32,7 @@
 ```ts
  computeAndConvert(value1: number, value2: number, operator: string) => Promise<ComputedConvert>
 ```
-- return ComputedConvert interface:
+- Response Type:
 ```ts
   export interface ComputedConvert {
   operator: string
@@ -40,7 +42,7 @@
   value2: number
   }
 ```
-- Intercept all backend errors and throw them as ApiError interface:
+- Error Type:
 ```ts
   export interface ApiError {
     code: string
@@ -48,24 +50,23 @@
    }
 ```
 ### Hooks
-- use_roman_calculator.tsx
-   - Incapsulate API logic
-   - Handle response state
-   - Handle error state
-   - Handle loading state
-      - Usage:
- ```ts
+#### use_roman_calculator.tsx
+Encapsulates API logic and manages:
+   -Response state
+   -Error state
+   - Loading state
+      - Usage example:
+```ts
     const { loading, error, simpleResult, handleSimpleConvert, clearError } =
     useRomanCalculator();
 ```   
 ### Components
-- convert_form.tsx
+#### convert_form.tsx
    - Input form to convert single number
-   - Show Result
-   - Show Error
-   - Use use_roman_calculator hook
-- compute_form.tsx
+   - Displays result and errors
+   - Uses useRomanCalculator hook
+#### compute_form.tsx
    - Input form to compute (add and subtract) 2 numbers
    - Show Result
    - Show Error
-   - Use use_roman_calculator hook
+   - Uses useRomanCalculator hook
