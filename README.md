@@ -15,7 +15,10 @@
 ## Structure
 ### API CALLS
 - roman_calculator_service.ts
-  - simpleConvert(value: number) => Promise<SimpleConvert>
+  - POST API_URL/convert 
+```ts
+   simpleConvert(value: number) => Promise<SimpleConvert>
+```
   - return SimpleConvert interface:
 ```ts
   export interface SimpleConvert {
@@ -23,7 +26,10 @@
   value: number
   }
 ```
-- computeAndConvert(value1: number, value2: number, operator: string) => Promise<ComputedConvert>
+  - POST API_URL/compute 
+```ts
+ computeAndConvert(value1: number, value2: number, operator: string) => Promise<ComputedConvert>
+```
   - return ComputedConvert interface:
 ```ts
   export interface ComputedConvert {
