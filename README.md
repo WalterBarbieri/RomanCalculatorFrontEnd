@@ -52,8 +52,8 @@ npm run dev
 ### Hooks
 #### use_roman_calculator.tsx
 Encapsulates API logic and manages:
--Response state
--Error state
+- Response state
+- Error state
 - Loading state
    - Usage example:
 ```ts
