@@ -21,5 +21,13 @@
   export interface SimpleConvert {
   roman: string
   value: number
-}
+  }
+```
+- simpleConvert(value: number) => Promise<SimpleConvert>
+  - return SimpleConvert interface:
+  ```json
+  export interface SimpleConvert {
+  roman: string
+  value: number
+  }
 ```
