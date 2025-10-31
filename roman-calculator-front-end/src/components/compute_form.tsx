@@ -19,6 +19,8 @@ export default function ComputeForm() {
     e.preventDefault();
     if (value1 !== "" && value2 !== "") {
       handleComputeAndConvert(Number(value1), Number(value2), operator);
+      setValue1("");
+      setValue2("");
     } else {
       return;
     }
@@ -47,7 +49,7 @@ export default function ComputeForm() {
             name="operator"
             value={operator}
             onChange={(e) => setOperator(e.target.value)}
-            className="border border-gray-300 p-2 rounded"
+            className=" text-xl"
           >
             <option value="add">+</option>
             <option value="subtract">-</option>
@@ -71,6 +73,12 @@ export default function ComputeForm() {
 
       {computedResult && (
         <div className="mt-4 p-3 bg-green-50 border border-green-200 rounded-lg">
+          <p>
+            <strong>Computation:</strong>
+             {` ${computedResult.value1} ${
+              computedResult.operator === "add" ? "+" : "-"
+            } ${computedResult.value2}`}
+          </p>
           <p>
             <strong>Computed Value:</strong> {computedResult.result}
           </p>

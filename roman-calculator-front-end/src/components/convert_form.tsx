@@ -11,6 +11,7 @@ export default function ConvertForm() {
     e.preventDefault();
     if (value !== "") {
       handleSimpleConvert(Number(value));
+      setValue("");
     } else {
       return;
     }
@@ -44,6 +45,12 @@ export default function ConvertForm() {
 
       {simpleResult && (
         <div className="mt-4 p-3 bg-green-50 border border-green-200 rounded-lg">
+          <p>
+            <strong>
+              Value:
+            </strong>
+            {` ${simpleResult.value}`}
+          </p>
           <p>
             <strong>Roman Numeral:</strong> {simpleResult.roman}
           </p>
