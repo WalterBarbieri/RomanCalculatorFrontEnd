@@ -11,3 +11,15 @@
 
 ## Style
 - tailwind CSS v.3
+
+## Structure
+### API CALLS
+- roman_calculator_service.ts
+  - simpleConvert(value: number) => Promise<SimpleConvert>
+  - return SimpleConvert interface:
+  ```json
+  export interface SimpleConvert {
+  roman: string
+  value: number
+}
+```
