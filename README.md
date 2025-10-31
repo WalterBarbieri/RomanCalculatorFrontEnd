@@ -40,3 +40,10 @@
   value2: number
   }
 ```
+- throws error as ApiError interface:
+```ts
+  export interface ApiError {
+    code: string
+    error: string
+   }
+```
