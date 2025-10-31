@@ -14,23 +14,23 @@
 
 ## Structure
 ### API CALLS
-- roman_calculator_service.ts
-  - POST API_URL/convert 
+#### SERVICE: roman_calculator_service.ts
+- POST API_URL/convert 
 ```ts
    simpleConvert(value: number) => Promise<SimpleConvert>
 ```
-  - return SimpleConvert interface:
+- return SimpleConvert interface:
 ```ts
   export interface SimpleConvert {
   roman: string
   value: number
   }
 ```
-  - POST API_URL/compute 
+- POST API_URL/compute 
 ```ts
  computeAndConvert(value1: number, value2: number, operator: string) => Promise<ComputedConvert>
 ```
-  - return ComputedConvert interface:
+- return ComputedConvert interface:
 ```ts
   export interface ComputedConvert {
   operator: string
